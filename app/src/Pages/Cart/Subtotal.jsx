@@ -7,7 +7,7 @@ export default function Subtotal({ subtotal, changePaymentStatus }) {
   // handle token
   const handleToken = async (token, addr) => {
     try {
-      const res = await axios.post("http://localhost:5000/checkout", {
+      const res = await axios.post("/checkout", {
         price: Number(subtotal) + 5,
         token,
       });
