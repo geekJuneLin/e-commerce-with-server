@@ -1,0 +1,116 @@
+.pop-up {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: opacity 0.3s linear;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pop-up-window {
+  padding: 3em;
+  position: absolute;
+  color: black;
+  width: 50%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0.3em;
+  background-color: #fff;
+  opacity: 1;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.pop-up-window img {
+  width: 200px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.pop-up-window h3 {
+  color: #5cb644;
+  margin: 0.8em 0;
+}
+
+.pop-up-window h3::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 0.5em;
+  content: "\f058";
+  font-size: 17px;
+  color: #5cb644;
+}
+
+.pop-up-window button,
+.view-cart-btn {
+  padding: 0.65em;
+  border: 0;
+  outline: 0;
+  font-size: 0.75rem;
+  background-color: #f08222;
+  border-radius: 3px;
+  text-align: center;
+  color: hsl(0 0% 96%);
+}
+
+.pop-up-window button:hover,
+.view-cart-btn:hover {
+  transition: all 0.2s ease-in;
+  background-color: #d4731e;
+}
+
+.btns {
+  margin: 1em auto;
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.6em;
+  right: 0.8em;
+}
+
+.close-btn:hover {
+  animation: rotate 0.5s linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.product-name {
+  font-weight: 700;
+}
+
+.fa-times {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+.fa-times:hover {
+  color: #000;
+}
