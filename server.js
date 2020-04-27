@@ -5,7 +5,7 @@ const cors = require("cors");
 const router = require("./routes/payment");
 const error = require("./routes/errors");
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const app = express();
 
