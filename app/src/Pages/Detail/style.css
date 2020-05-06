@@ -20,11 +20,12 @@
 .detail-img-specs {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .imgs-container {
-  flex: 0 0 35%;
+  flex: 0 0 45%;
 }
 
 .detail-img:first-child {
@@ -67,7 +68,7 @@
 }
 
 .detail-specs {
-  flex: 0 0 55%;
+  flex: 0 0 50%;
   padding: 2em 0.2em;
   margin-left: 1em;
   border: 2px solid #f6f7fa;
@@ -168,4 +169,15 @@
 .add-to-cart-btn:hover {
   transition: all 0.2s ease-in;
   background-color: #d4731e;
+}
+
+@media only screen and (max-width: 1800px) {
+  .imgs-container,
+  .detail-specs {
+    flex: 0 0 100%;
+  }
+
+  .detail-specs {
+    margin: 2rem 0 0 0;
+  }
 }
